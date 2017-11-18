@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Newsletter</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="newsletter">
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="place.html">PLACES TO VISIT/DINE</a></li>
+            <li><a href="accommodation.html">ACCOMODATION</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="active"><a href="newsletter.html">NEWSLETTER</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="registration">
+      <h2 class = "text-center">Registration for Newsletter</h2>
+      <br>
+      <div class="row">
+        <div class="col-lg-5">
+          <form method="post">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" id="name" class="form-control" placeholder="Name" /><br/>
+            </div>
+            <div class="form-group">
+              <label for="surname">Surname: </label><input type="text" id="surname" class="form-control" placeholder="Surname" /><br/>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail address: </label>
+              <input type="email" id="email" class="form-control" placeholder="Email" /><br/>
+            </div>
+            <div class="checkbox">
+              <label>
+                     <input type="checkbox" id="agree"/> I agree with terms<br/>
+                     </label>
+            </div>
+            <div class="form-group">
+              <input type="button" value="Sign up" class="btn btn-default" onClick="validateForm()" />
+            </div>
+            <p id="error"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <nav class="navbar-fixed-bottom">
+    <footer>
+      <div class="footer-menu">
+        <div class="container">
+          <ul class="list-inline ">
+            <li>Copyright &copy; 2017 </li>
+            <li>Developed By Natalia Zubko </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </nav>
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
